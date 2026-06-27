@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <title>PortFolio</title>
+    <meta name="description" content="Karm Patel - Professional Computer Engineer, Full-Stack Developer, DevOps & Generative AI Enthusiast based in Gujarat, India." />
+    <meta name="keywords" content="Karm Patel, Full Stack Developer, DevOps, Generative AI, Next.js, Django, React Native, Kubernetes, Tokyo Night Portfolio" />
+    <meta name="author" content="Karm Patel" />
+    <title>Karm Patel | Portfolio</title>
 
-    <script src="https://kit.fontawesome.com/a388be2306.js" crossorigin="anonymous" defer="defer"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- STYLE CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -18,414 +21,505 @@
     <!-- Navigation Bar -->
     <header id="menu" class="menu">
         <nav>
-            <h3 class="logo">Karm Patel</h3>
+            <div class="logo-container">
+                <span class="logo-dot"></span>
+                <h3 class="logo">karm<span>.dev</span></h3>
+            </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#journey">Journey</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="menu-btns">
-                <i class="fa-solid fa-bars-staggered menu-btn"></i>
-                <i class="fa-solid fa-xmark close-btn"></i>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <div class="menu-btns">
+                    <i class="fa-solid fa-bars-staggered menu-btn"></i>
+                    <i class="fa-solid fa-xmark close-btn"></i>
+                </div>
             </div>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="hero">
-        <div class="hero">
-            <div class="hero-main">
-                <div class="hero-text">
-                    <div>
-                        <h1>Hi, I'm <span>Karm</span></h1>
-                        <img src="./assets/images/waving-hand.png" alt="waving_hand" />
-                    </div>
-                    <span class="passion">Computer Engineer</span>
-                    <p>Experience in Web Design and Development Knowledge, Producing Quality Work. 📍</p>
-                    <span class="social-icon"><a aria-label="linkedin" rel="noreferrer" target="_blank"
-                            href="https://www.linkedin.com/in/karmpateldev/"><i class="fa-brands fa-linkedin"></i></a><a
-                            aria-label="github" rel="noreferrer" target="_blank"
-                            href="https://github.com/karmpateldev/"><i class="fa-brands fa-github"></i></a></span>
+        <div class="container hero-main">
+            <div class="hero-text">
+                <div class="hero-welcome">
+                    <span>Hi, I'm Karm Patel</span>
+                    <img src="./assets/images/waving-hand.png" alt="waving_hand" />
                 </div>
+                <h1>Engineering <span>Scalable</span> &amp; Intelligent Systems</h1>
+                <span class="passion">Full-Stack Developer | DevOps &amp; GenAI Enthusiast</span>
+                <p>Computer Engineer (Class of 2025) dedicated to building decoupling client-server architectures, automating Jenkins &amp; Kubernetes deployments, and crafting Generative AI workflows.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch <i class="fa-solid fa-paper-plane"></i></a>
+                    <a href="#projects" class="btn btn-secondary">View My Work <i class="fa-solid fa-arrow-down"></i></a>
+                </div>
+                <div class="social-links">
+                    <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://linkedin.com/in/karmpateldev" class="social-icon-btn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/karmpateldev" class="social-icon-btn">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a aria-label="twitter" rel="noreferrer" target="_blank" href="https://twitter.com/karmpateldev" class="social-icon-btn">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-img-container">
                 <div class="hero-img"></div>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
-        <div class="about">
+        <div class="container">
+            <span class="section-subtitle">Introduction</span>
+            <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-content">
                 <div class="img-side">
-                    <img src="./assets/images/emoji-image.gif" alt="emoji-img" class="emoji-img" />
-                    <img src="./assets/images/about-image.webp" alt="about-img" class="about-img" />
+                    <img src="./assets/images/about-image.webp" alt="Karm Patel working" class="about-img" />
+                    <img src="./assets/images/emoji-image.gif" alt="developer avatar animation" class="emoji-img" />
                 </div>
                 <div class="text-side">
-                    <h4>About me</h4>
-                    <h3>A Dedicated Developer<br />Based in Gujarat, India 📍</h3>
-                    <p>As a Junior Front-End Developer, I possess an impressive skills in HTML, CSS, JavaScript,
-                        React and Tailwind. I develop responsive websites that offer a
-                        smooth user experience.</p>
+                    <h3>A Dedicated Computer Engineer Based in Gujarat, India 📍</h3>
+                    <p>I build modern web architectures, DevOps deployment pipelines, and custom AI applications. Combining frontend performance with stable server-side backends, I transform ideas into containerized, production-grade solutions.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
-        <div class="skills">
-            <div class="skills-content">
-                <h4>Skills</h4>
-                <h3>My Technical Level 👇</h3>
-
-                <div class="skill-items">
-                    <!-- Skill - 1 -->
-                    <div class="skill-content active">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-code skill-icon"></i>
-                            <div class="skill-text">
-                                <h3>Frontend Developer</h3>
-                                <!-- <span></span> -->
-                            </div>
-                            <i class="fa-solid fa-angle-down skill-arrow"></i>
-                        </div>
-
-                        <div class="skill-list">
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>HTML</h3>
-                                    <span class="skill-percent">90%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-html"></span>
-                                </div>
-                            </div>
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>CSS</h3>
-                                    <span class="skill-percent">75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-css"></span>
-                                </div>
-                            </div>
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>JavaScript</h3>
-                                    <span class="skill-percent">70%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-js"></span>
-                                </div>
-                            </div>
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>React</h3>
-                                    <span class="skill-percent">65%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-react"></span>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container">
+            <span class="section-subtitle">My Toolbox</span>
+            <h2 class="section-title">Technical <span>Skills</span></h2>
+            <div class="skills-grid">
+                
+                <!-- Category 1 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Frontend Development</h3>
                     </div>
-                    <!-- Skill - 2 -->
-                    <div class="skill-content">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-server skill-icon"></i>
-                            <div class="skill-text">
-                                <h3>Backend Developer</h3>
-                                <!-- <span></span> -->
-                            </div>
-                            <i class="fa-solid fa-angle-down skill-arrow"></i>
-                        </div>
-
-                        <div class="skill-list">
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>PHP</h3>
-                                    <span class="skill-percent">65%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-php"></span>
-                                </div>
-                            </div>
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>NodeJS</h3>
-                                    <span class="skill-percent">50%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-nodejs"></span>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="skill-tags">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">HTML5 / CSS3</span>
+                        <span class="tech-tag">Bootstrap</span>
                     </div>
-                    <!-- Skill - 3 -->
-                    <div class="skill-content">
-                        <div class="skill-header">
-                            <i class="fa-solid fa-swatchbook skill-icon"></i>
-                            <div class="skill-text">
-                                <h3>Designer</h3>
-                                <!-- <span></span> -->
-                            </div>
-                            <i class="fa-solid fa-angle-down skill-arrow"></i>
-                        </div>
+                </div>
 
-                        <div class="skill-list">
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>Canva</h3>
-                                    <span class="skill-percent">75%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-canva"></span>
-                                </div>
-                            </div>
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>Figma</h3>
-                                    <span class="skill-percent">70%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-figma"></span>
-                                </div>
-                            </div>
-
-                            <div class="skill-data">
-                                <div class="skill-title">
-                                    <h3>Photoshop</h3>
-                                    <span class="skill-percent">45%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <span class="skill-line skill-photoshop"></span>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Category 2 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend &amp; Databases</h3>
                     </div>
+                    <div class="skill-tags">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">Django REST</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
 
+                <!-- Category 3 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fa-solid fa-cloud"></i>
+                        <h3>DevOps &amp; Infrastructure</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes (K8s)</span>
+                        <span class="tech-tag">Jenkins Pipeline</span>
+                        <span class="tech-tag">Nginx</span>
+                        <span class="tech-tag">Git / GitHub</span>
+                        <span class="tech-tag">WSL2 / Bash</span>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fa-solid fa-brain"></i>
+                        <h3>Generative AI &amp; ML</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Hugging Face Diffusers</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">RAG Compilation</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                </div>
+
+                <!-- Category 5 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h3>Mobile Architecture</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Redux Toolkit</span>
+                        <span class="tech-tag">Firebase Auth</span>
+                        <span class="tech-tag">Cloud Firestore</span>
+                    </div>
+                </div>
+
+                <!-- Category 6 -->
+                <div class="skill-card">
+                    <div class="skill-card-header">
+                        <i class="fa-solid fa-compass"></i>
+                        <h3>Design &amp; Utilities</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">Canva</span>
+                        <span class="tech-tag">Adobe Photoshop</span>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section id="qualifications">
-        <div class="qualifications">
-            <div class="qualifications-content">
-                <h4>qualifications</h4>
-                <h3>My Personal Journey 🎓</h3>
-
-                <div class="qualifications-items">
-
-                    <!-- Qualification - 1 -->
-                    <div class="qualification-content">
-                        <div class="qualification-data">
-                            <h3>Computer Engineering</h3>
-                            <span>GEC - Gandhinagar</span>
-                            <div class="qualification-calendar">
-                                <i class="fa-solid fa-calendar"></i>
-                                2021-2025
-                            </div>
-                        </div>
-
-                        <div class="qualification-style">
-                            <span class="qualification-rounder"></span>
-                            <span class="qualification-line"></span>
-                        </div>
-                    </div>
-
-                    <!-- Qualification - 2 -->
-                    <div class="qualification-content">
-                        <div></div>
-
-                        <div class="qualification-style">
-                            <span class="qualification-rounder"></span>
-                            <span class="qualification-line"></span>
-                        </div>
-
-                        <div class="qualification-data">
-                            <h3>HSC</h3>
-                            <span>Mahesana</span>
-                            <div class="qualification-calendar">
-                                <i class="fa-solid fa-calendar"></i>
-                                2021
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Qualification - 3 -->
-                    <div class="qualification-content">
-                        <div class="qualification-data">
-                            <h3>SSC</h3>
-                            <span>Mahesana</span>
-                            <div class="qualification-calendar">
-                                <i class="fa-solid fa-calendar"></i>
-                                2019
-                            </div>
-                        </div>
-
-                        <div class="qualification-style">
-                            <span class="qualification-rounder"></span>
-                            <span class="qualification-line"></span>
-                        </div>
-                    </div>
-
-                    <!-- Qualification - 4 -->
-                    <div class="qualification-content">
-                        <div></div>
-
-                        <div class="qualification-style">
-                            <span class="qualification-rounder"></span>
-                            <!-- <span class="qualification-line"></span> -->
-                        </div>
-
-                        <!-- <div class="qualification-data">
-                        <h3>Computer Engineering</h3>
-                        <span>GEC - Gandhinagar</span>
-                        <div class="qualification-calendar">
-                            <i class="fa-solid fa-calendar"></i>
-                            2021-2025
-                        </div>
-                    </div> -->
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="projects">
-            <div class="project-content">
-                <h4>PortFolio</h4>
-                <h3>Each project is a unique piece of development 🧩</h3>
+        <div class="container">
+            <span class="section-subtitle">Portfolio</span>
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-items">
 
-                <div class="projects-items">
-
-                    <div class="project">
-                        <div class="img-side">
-                            <a href=""><img src="./assets/images/qr-code-generator-project.png"
-                                    alt="QR Code Generator" /></a>
+                <!-- Project 1: MedTech Ecosystem -->
+                <div class="project-card">
+                    <div class="project-img-side">
+                        <img src="./assets/images/nedtech.png" alt="MedTech Ecosystem mockup" />
+                    </div>
+                    <div class="project-text-side">
+                        <span class="project-status completed">CI/CD Orchestrated</span>
+                        <h3>MedTech Ecosystem</h3>
+                        <p class="project-desc">Secure end-to-end containerized MERN Stack portal serving professional workflows and patient records.</p>
+                        <ul class="project-features">
+                            <li>Multi-stage Jenkins pipeline scanning and building images.</li>
+                            <li>Kubernetes dev/prod namespace rolling updates and service manifests.</li>
+                            <li>Cryptographic secure storage (AES-256-CBC, secure JWT).</li>
+                            <li>Braintree gateway credit checkout system integration.</li>
+                        </ul>
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>Kubernetes</span>
+                            <span>Jenkins</span>
+                            <span>Docker</span>
                         </div>
-                        <div class="text-side">
-                            <a target="_blank" href=""><h3>QR Code Generator 📲</h3></a>
-                            <p>A QR Code Generator website is an online platform that allows users to input a URL and
-                                generate a QR Code. The website provides an interface for resizing and download button
-                                for QR Code Also.</p>
-                            <div class="stack">
-                                <p>Tailwind</p>
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="links">
-                                <!-- <a target="_blank" href="">Code <i class="fa-brands fa-github"></i></a> -->
-                                <a target="_blank" href="">Live Demo <i
-                                        class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-                            </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/karmpateldev/MedTech"><i class="fa-brands fa-github"></i> Repository</a>
                         </div>
                     </div>
-
-                    <div class="project">
-                        <div class="img-side">
-                            <a href=""><img src="./assets/images/magic-notes-project.png" alt="Magic Notes" /></a>
-                        </div>
-                        <div class="text-side">
-                            <a target="_blank" href=""><h3>Magic Notes 📝</h3></a>
-                            <p>A Magic Notes Website is an online plateform that allows users to write a notes. The
-                                website provides seperation of important notes, edit and delete the notes.</p>
-                            <div class="stack">
-                                <p>Bootstrap</p>
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="links">
-                                <!-- <a target="_blank" href="">Code <i class="fa-brands fa-github"></i></a> -->
-                                <a target="_blank" href="">Live Demo <i
-                                        class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="img-side">
-                            <a href=""><img src="./assets/images/temperature-convertor-project.png"
-                                    alt="Temperature Convertor" /></a>
-                        </div>
-                        <div class="text-side">
-                            <a target="_blank" href=""><h3>Temperature Convertor 🌡️</h3></a>
-                            <p>A Temperature Convertor website is an online platform that allows users to convert a
-                                temperature from one unit to another unit. The website provides smooth experience.</p>
-                            <div class="stack">
-                                <p>CSS</p>
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="links">
-                                <!-- <a target="_blank" href="">Code <i class="fa-brands fa-github"></i></a> -->
-                                <a target="_blank" href="">Live Demo <i
-                                        class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Project 2: AI Interior Design -->
+                <div class="project-card">
+                    <div class="project-img-side">
+                        <img src="./assets/images/ai-interior-design.png" alt="AI Interior Design project mockup" />
+                    </div>
+                    <div class="project-text-side">
+                        <span class="project-status completed">Fully Functional</span>
+                        <h3>AI Interior Design</h3>
+                        <p class="project-desc">Generative AI design studio converting camera snapshots into architectural room renders.</p>
+                        <ul class="project-features">
+                            <li>Stable Diffusion v1-5 pipeline custom diffusers integration.</li>
+                            <li>PyTorch &amp; CUDA hardware optimization for fast image rendering.</li>
+                            <li>Dynamic prompt matching engine (minimalist, modern, classic).</li>
+                            <li>React frontend for smooth user image uploads.</li>
+                        </ul>
+                        <div class="project-stack">
+                            <span>React</span>
+                            <span>Flask</span>
+                            <span>PyTorch</span>
+                            <span>Stable Diffusion</span>
+                            <span>CUDA</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/karmpateldev/AI-Interior-Design"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: AFSSY App -->
+                <div class="project-card">
+                    <div class="project-img-side">
+                        <img src="./assets/images/afssy-app.png" alt="AFSSY project mockup" />
+                    </div>
+                    <div class="project-text-side">
+                        <span class="project-status completed">Production Ready</span>
+                        <h3>AFSSY App</h3>
+                        <p class="project-desc">React Native application suite for smart agricultural analytics and crop safety.</p>
+                        <ul class="project-features">
+                            <li>Dynamic camera-based plant disease recognition model.</li>
+                            <li>APMC mandi daily crop rate and price analytics.</li>
+                            <li>Farmer forums and regional meteorological weather notifications.</li>
+                            <li>Redux state sync and Firebase Firestore backing.</li>
+                        </ul>
+                        <div class="project-stack">
+                            <span>React Native</span>
+                            <span>Redux Toolkit</span>
+                            <span>Firebase</span>
+                            <span>AI Recognition</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/karmpateldev/AFSSY-App"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Todo App -->
+                <div class="project-card">
+                    <div class="project-img-side">
+                        <img src="./assets/images/todo-site.png" alt="Todo App mockup" />
+                    </div>
+                    <div class="project-text-side">
+                        <span class="project-status completed">Fully Functional</span>
+                        <h3>Todo App</h3>
+                        <p class="project-desc">Interactive task management application featuring sleek categorization, persistent storage, and responsive controls.</p>
+                        <ul class="project-features">
+                            <li>Dynamic item list with immediate creation, updates, and deletion.</li>
+                            <li>Custom category tags (Personal, Work, Urgent) with priority coloring.</li>
+                            <li>Session persistence using browser-level LocalStorage.</li>
+                            <li>Fluid animations for task completion transitions.</li>
+                        </ul>
+                        <div class="project-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/karmpateldev/Todo-App"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Other Projects Grid -->
+            <h3 class="other-projects-title">Other Notable Projects</h3>
+            <div class="other-projects-grid">
+                
+                <div class="other-project-card">
+                    <div class="other-card-header">
+                        <i class="fa-regular fa-folder-open folder"></i>
+                        <div class="other-card-links">
+                            <a target="_blank" href="https://github.com/karmpateldev/Whatsapp-Chat-Analysis"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Whatsapp Analyzer</h3>
+                    <p>Streamlit analytical dashboard compiling emojis, sentiment trends, wordclouds, and chat member stats.</p>
+                    <div class="other-project-stack">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Plotly</span>
+                    </div>
+                </div>
+
+                <div class="other-project-card">
+                    <div class="other-card-header">
+                        <i class="fa-regular fa-folder-open folder"></i>
+                        <div class="other-card-links">
+                            <a target="_blank" href="https://github.com/karmpateldev/Predict-Price-Of-House"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>House Price Predictor</h3>
+                    <p>Machine learning predictive application applying regressors through a responsive Flask service API.</p>
+                    <div class="other-project-stack">
+                        <span>Flask</span>
+                        <span>Scikit-learn</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="other-project-card">
+                    <div class="other-card-header">
+                        <i class="fa-regular fa-folder-open folder"></i>
+                        <div class="other-card-links">
+                            <a target="_blank" href="https://github.com/karmpateldev/iDiscuss"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>iDiscuss Forum</h3>
+                    <p>Category-based server-rendered discussion forum serving online comments and community tags.</p>
+                    <div class="other-project-stack">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="contact">
-            <div class="contact-content">
-                <div class="contact-title">
-                    <h4>Contact</h4>
-                    <h3>Don't be shy! Hit me up! 👇</h3>
+    <!-- Qualifications / Journey Section -->
+    <section id="journey">
+        <div class="container">
+            <span class="section-subtitle">Chronology</span>
+            <h2 class="section-title">My <span>Journey</span></h2>
+            <div class="journey-container">
+                
+                <!-- Column 1: Experience -->
+                <div class="timeline-column">
+                    <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                    <div class="timeline-items">
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-dot"></span>
+                            <span class="timeline-date">Jun 2024 - Present</span>
+                            <h4 class="timeline-title">Software Developer</h4>
+                            <span class="timeline-subtitle">Lanet Team</span>
+                            <p class="timeline-desc">Writing clean Python backends and decoupling responsive customer clients with Next.js and React architectures.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-dot"></span>
+                            <span class="timeline-date">Dec 2023 - Jun 2024</span>
+                            <h4 class="timeline-title">Web Development Intern</h4>
+                            <span class="timeline-subtitle">Webito Infotech</span>
+                            <p class="timeline-desc">Designed front-end pages using React, Tailwind CSS, and optimized assets for clean loading performance.</p>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="contact-icons">
-                    <div class="contact-icon">
-                        <span><i class="fa-solid fa-map-location-dot"></i></span>
+
+                <!-- Column 2: Education -->
+                <div class="timeline-column">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline-items">
+                        
+                        <div class="timeline-item">
+                            <span class="timeline-dot"></span>
+                            <span class="timeline-date">2021 - 2025</span>
+                            <h4 class="timeline-title">B.E. in Computer Engineering</h4>
+                            <span class="timeline-subtitle">Government Engineering College (GEC), Gandhinagar</span>
+                            <p class="timeline-desc">First-class honors education in systems architecture, algorithms, and microprocessors. government-funded engineering scholarship.</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-dot"></span>
+                            <span class="timeline-date">Completed 2021</span>
+                            <h4 class="timeline-title">Higher Secondary Certificate (HSC)</h4>
+                            <span class="timeline-subtitle">Mehsana Boarding School</span>
+                            <p class="timeline-desc">Focused on Physics, Chemistry, and Advanced Mathematics.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <span class="section-subtitle">Let's Connect</span>
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-layout">
+                
+                <div class="contact-info">
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
                         <div class="contact-details">
                             <h3>Location</h3>
-                            <p>Gujarat, India</p>
+                            <p>Gujarat, India 📍</p>
                         </div>
                     </div>
-                    <div class="contact-icon">
-                        <span><i class="fa-solid fa-envelope-open-text"></i></span>
+
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
                         <div class="contact-details">
-                            <h3>Mail</h3>
-                            <a href="mailto:contact.karmpatel@gmail.com">
-                                <p>contact.karmpatel@gmail.com</p>
-                            </a>
+                            <h3>Direct Email</h3>
+                            <a href="mailto:contact.karmpatel@gmail.com">contact.karmpatel@gmail.com</a>
                         </div>
                     </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fa-solid fa-hashtag"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Social Profiles</h3>
+                            <p>@karmpateldev</p>
+                        </div>
+                    </div>
+
                 </div>
+
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Hi Karm, let's talk about..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <section id="footer" class="footer">
-            <div class="footer-content">
-                <h3>Copyright © 2023. All rights are reserved</h3>
-                <div class="footer-icons">
-                    <a target="_blank" href="https://www.linkedin.com/in/karmpateldev/"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a target="_blank" href="https://www.github.com/karmpateldev/"><i
-                            class="fa-brands fa-github"></i></a>
-                </div>
+        <div class="footer-content">
+            <h3>Copyright &copy; 2026 Karm Patel. All rights reserved.</h3>
+            <div class="footer-icons">
+                <a target="_blank" href="https://linkedin.com/in/karmpateldev" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/karmpateldev" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://twitter.com/karmpateldev" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
-        </section>
+        </div>
     </footer>
 
+    <!-- Scroll Progress and Top Button -->
     <div id="progress">
         <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
     </div>
 
+    <!-- JS script -->
     <script src="./js/script.js"></script>
 </body>
 
